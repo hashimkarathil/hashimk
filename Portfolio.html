@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio page</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar" style="display: none;">
+                <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Aboutpage.html">About</a></li>
+                <li ><a href="Resume.html">Resume</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Hashim Karathil</a></li>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="Aboutpage.html">About Us</a></li>
+                <li class="hideOnMobile"><a href="Resume.html">Resume</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                <li class="showside" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="all-section">
+        <!-- Portfolio Section -->
+        <section class="portfolio">
+            <div class="portfolio-head">
+                <p>Showcasing some of my best work</p>
+                <h2>Portfolio</h2>
+                <div class="animated-bar"></div>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="project1.png" alt="Project 1">
+                <div class="overlay">
+                    <h3>Project 1</h3>
+                </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project2.jpeg" alt="Project 2">
+                    <div class="overlay">
+                        <h3>Project 2</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project3.jpg" alt="Project 3">
+                    <div class="overlay">
+                        <h3>Project 3</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project4.png" alt="Project 4">
+                    <div class="overlay">
+                        <h3>Project 4</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project5.webp" alt="Project 4">
+                    <div class="overlay">
+                        <h3>Project 5</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project1.png" alt="Project 4">
+                    <div class="overlay">
+                        <h3>Project 6</h3>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section>
+
+        
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Hashim Karathil. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+
+        function hidesidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

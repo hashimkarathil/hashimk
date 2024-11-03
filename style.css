@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('hashim.png'); /* Your background image */
+    background-color: black; /* Black background */
+    background-size: 650px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    position: relative; /* Needed for pseudo-element positioning */
+}
+
+main {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative; /* Ensure content appears above the overlay */
+    z-index: 2;
+}
+
+.centered-text {
+    color: #edece8;
+    font-size: 40px;
+    text-align: center;
+}
+
+.typing-animation {
+    border-right: 2px solid #e8eaed;
+    display: inline-block;
+    animation: blink 0.5s step-end infinite alternate;
+    color: #00cc66;
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #e8eaed; }
+}
+nav {
+    background-color: rgb(24, 24, 24);
+    box-shadow: 3px 3px 5px black;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #ececec;
+}
+
+nav a:hover {
+    background-color: #00cc66;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.showside {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    background-color: rgba(129, 129, 129, 0.316);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgb(56, 56, 56);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(24, 24, 24);
+    color: rgb(199, 199, 199);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+    width: 100%;
+}
+@media(mIN-width: 1650px){
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url('hashim.png'); /* Your background image */
+        background-color: black; /* Black background */
+        background-size: 850px;
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: sans-serif;
+        position: relative; /* Needed for pseudo-element positioning */
+    }
+}
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .showside {
+        display: block;
+    }
+    .centered-text {
+        color: #edece8;
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .typing-animation {
+        border-right: 2px solid #e8eaed; /* Blinking cursor */
+        display: inline-block; /* Ensure it stays inline with text */
+        animation: blink 0.5s step-end infinite alternate;
+        /*font-weight: bold;  Makes it bold for better visibility */
+        color: #00cc66;
+    }
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+    
+.social-bar .icon {
+    display: none;
+}
+.centered-text {
+    color: #edece8;
+    font-size: 23px;
+    text-align: center;
+}
+
+.typing-animation {
+    border-right: 2px solid #e8eaed; /* Blinking cursor */
+    display: inline-block; /* Ensure it stays inline with text */
+    animation: blink 0.5s step-end infinite alternate;
+    /*font-weight: bold;  Makes it bold for better visibility */
+    color: #00cc66;
+}
+footer p{
+    font-size: 15px;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('hashim.png'); /* Your background image */
+    background-color: black; /* Black background */
+    
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    position: relative; /* Needed for pseudo-element positioning */
+}
+}
+
+
+
+
+.social-bar {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 2px ;
+    margin-left: 50px;
+    color: #00cc66;
+}
+
+
+.icon:hover {
+    filter: brightness(0.8);
+    
+}
+
+/*
+@media(min-width: 200px){
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url('hashim.png'); 
+        background-color: black;
+        background-size: 850px;
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: sans-serif;
+        position: relative; 
+    }
+} */
